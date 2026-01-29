@@ -1,0 +1,3 @@
+[submodule "app/ts/helpers"]
+	path = app/ts/helpers
+	url = git@github.com:lucaspl3tti/ts-helpers.git

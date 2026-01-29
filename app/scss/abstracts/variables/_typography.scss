@@ -1,0 +1,165 @@
+// define fonts
+$font-body: 'Sora', sans-serif;
+$font-code: 'SourceCodePro', monospace;
+
+// define font-weights
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// define font-sizes
+$heading-styles: (
+  'h1': (
+    'mb': (
+        'font-size': 24px,
+        'line-height': 28px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 30px,
+        'line-height': 36px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 40px,
+        'line-height': 48px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+
+  'h2': (
+    'mb': (
+        'font-size': 20px,
+        'line-height': 24px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 24px,
+        'line-height': 28px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 30px,
+        'line-height': 36px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+
+  'h3': (
+    'mb': (
+        'font-size': 18px,
+        'line-height': 22px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 20px,
+        'line-height': 24px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 24px,
+        'line-height': 28px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+
+  'h4': (
+    'mb': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 18px,
+        'line-height': 22px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 20px,
+        'line-height': 24px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+
+  'h5': (
+    'mb': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 18px,
+        'line-height': 22px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+
+  'h6': (
+    'mb': (
+        'font-size': 14px,
+        'line-height': 18px,
+        'font-weight': $font-weight-black,
+    ),
+    'tb': (
+        'font-size': 14px,
+        'line-height': 18px,
+        'font-weight': $font-weight-black,
+    ),
+    'dt': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-black,
+    ),
+  ),
+);
+
+$paragraph-styles: (
+  'p1': (
+    'mb': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-regular,
+    ),
+    'dt': (
+        'font-size': 20px,
+        'line-height': 24px,
+        'font-weight': $font-weight-regular,
+    ),
+  ),
+
+  'p2': (
+    'mb': (
+        'font-size': 14px,
+        'line-height': 18px,
+        'font-weight': $font-weight-regular,
+    ),
+    'dt': (
+        'font-size': 16px,
+        'line-height': 20px,
+        'font-weight': $font-weight-regular,
+    ),
+  ),
+
+  'p3': (
+    'mb': (
+        'font-size': 12px,
+        'line-height': 16px,
+        'font-weight': $font-weight-regular,
+    ),
+    'dt': (
+        'font-size': 14px,
+        'line-height': 18px,
+        'font-weight': $font-weight-regular,
+    ),
+  ),
+);

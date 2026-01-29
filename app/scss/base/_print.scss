@@ -1,0 +1,30 @@
+/**
+ * print stylesheet
+*/
+@include media-print {
+  @page {
+    margin: 1cm;
+  }
+
+  body {
+    background: $white;
+    color: $black;
+  }
+
+  a {
+    break-inside: avoid;
+  }
+
+  blockquote {
+    break-inside: avoid;
+  }
+
+  table,
+  pre {
+    break-inside: avoid;
+  }
+
+  ul, ol, dl  {
+    break-before: avoid;
+  }
+}

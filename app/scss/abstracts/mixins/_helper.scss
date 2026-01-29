@@ -1,0 +1,71 @@
+/**
+ * Helper mixins
+*/
+// media queries
+@mixin media-print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+// Text selection
+@mixin text-selection($color-selection, $color-selection-bg) {
+  ::-moz-selection { // stylelint-disable-line selector-no-vendor-prefix
+    background: $color-selection-bg;
+    color: $color-selection;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: $color-selection-bg;
+    color: $color-selection;
+    text-shadow: none;
+  }
+}
+
+// Placeholder
+@mixin placeholder {
+  // stylelint-disable selector-no-vendor-prefix
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+  // stylelint-enable selector-no-vendor-prefix
+}
+
+// truncate multiline
+@mixin truncate-multiline(
+  $line-height: 1.2em,
+  $line-count: 2,
+  $background-color: $color-white
+) {
+  display: -webkit-box;
+  max-width: 95%;
+  height: $line-height * $line-count;
+  margin-right: -1em;
+  padding-right: 1em;
+  overflow: hidden;
+  line-height: $line-height;
+  text-align: justify;
+  line-clamp: $line-count;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-count;
+}

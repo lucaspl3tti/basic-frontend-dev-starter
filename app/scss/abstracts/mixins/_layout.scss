@@ -1,0 +1,73 @@
+/**
+* ##### Layout Mixins #####
+*/
+// spacing
+$space-base: 4px;
+
+@function spacing($spacing: 1) {
+  @return $space-base * $spacing;
+}
+
+// paddings
+@mixin padding-y(
+  $padding-top,
+  $padding-bottom: $padding-top,
+  $is-important: false
+) {
+  @if $is-important {
+    $padding-top: $padding-top !important;
+    $padding-bottom: $padding-bottom !important;
+  }
+
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+@mixin padding-x(
+  $padding-left,
+  $padding-right: $padding-left,
+  $is-important: false
+) {
+  @if $is-important {
+    $padding-left: $padding-left !important;
+    $padding-right: $padding-right !important;
+  }
+
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+// margins
+@mixin margin-y(
+  $margin-top,
+  $margin-bottom: $margin-top,
+  $is-important: false
+) {
+  @if $is-important {
+    $margin-top: $margin-top !important;
+    $margin-bottom: $margin-bottom !important;
+  }
+
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin margin-x(
+  $margin-left,
+  $margin-right: $margin-left,
+  $is-important: false
+) {
+  @if $is-important {
+    $margin-left: $margin-left !important;
+    $margin-right: $margin-right !important;
+  }
+
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+// positioning
+@mixin position($top: 0, $right: auto, $bottom: auto, $left: 0) {
+  position: absolute;
+  inset: $top $right $bottom $left;
+}

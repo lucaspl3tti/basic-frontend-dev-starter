@@ -1,0 +1,56 @@
+// default colors
+$color-white: #fff;
+$color-black: #000;
+
+$color-gray-025: #f2f2f2;
+$color-gray-050: #f5f5f5;
+$color-gray-075: #ebebeb;
+$color-gray-100: #e5e5e5;
+$color-gray-150: #d9d9d9;
+$color-gray-200: #ccc;
+$color-gray-300: #bfbfbf;
+$color-gray-400: #b2b2b2;
+$color-gray-500: #a6a6a6;
+$color-gray-600: #999;
+$color-gray-700: #7f7f7f;
+$color-gray-800: #666;
+$color-gray-850: #4c4c4c;
+$color-gray-900: #333;
+$color-gray-950: #191919;
+
+// body colors
+$color-body: $color-gray-050;
+$color-body-dark: $color-black;
+
+// text colors
+$color-text: $color-gray-950;
+$color-text-light: $color-white;
+
+// primary and secondary color
+$color-primary: #27187e;
+$color-secondary: #ff8600;
+
+// functional colors
+$color-success-dark: #206533;
+$color-success: #379b52;
+$color-success-light: #ebf7ea;
+
+$color-warning-dark: #84630f;
+$color-warning: #e8c62a;
+$color-warning-light: #fef3cc;
+
+$color-info-dark: #0c515f;
+$color-info: #127e94;
+$color-info-light: #d1ebf1;
+
+$color-danger-dark: #672029;
+$color-danger: #d70113;
+$color-danger-light: #ffe8ea;
+
+// component colors
+$color-link: $color-primary;
+$color-link-hover: color.adjust($color-link, $lightness: -10%);
+
+$color-code-block-background: $color-gray-950;
+
+// define your other color variables here

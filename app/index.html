@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Frontend Dev Starter</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/dist/main.css">
+
+    <!-- Font Awesome Font -->
+    <script src="https://kit.fontawesome.com/eb7426337a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- App Loader -->
+    <div class="app-loader app-loader--active" data-app-loader>
+        <div class="app-loader__loader loader">
+            <div class="loader__circle">
+                <div class="loader__circle-dot"></div>
+                <div class="loader__circle-outline"></div>
+            </div>
+
+            <div class="loader__circle">
+                <div class="loader__circle-dot"></div>
+                <div class="loader__circle-outline"></div>
+            </div>
+
+            <div class="loader__circle">
+                <div class="loader__circle-dot"></div>
+                <div class="loader__circle-outline"></div>
+            </div>
+
+            <div class="loader__circle">
+                <div class="loader__circle-dot"></div>
+                <div class="loader__circle-outline"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="app">
+        <div class="container">
+            <h1>Basic Frontend Dev Starter</h1>
+            <p>
+                My personal frontend development and testing environment using <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a>, designed for framework-agnostic TypeScript projects.
+            </p>
+
+            <div class="btn-wrapper">
+                <a class="btn btn-primary" href="https://www.spletti.info/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-terminal icon-fa"></i>
+                    <span>Button test</span>
+                </a>
+            </div>
+
+            <div class="examples">
+                <!-- Parent / Child example -->
+                <div class="parent mt-5">
+                    <div class="child" id="firstChild">
+                        <div class="child__child">
+                            <div class="child__child__child">
+                                <div class="test">
+                                    <p class="parent-demo-text">
+                                        This is a child
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- formatting examples -->
+                <div class="formatting">
+                    <p class="date">2026/01/29</p>
+
+                    <p class="truncate">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dicta eos. Similique deserunt, reprehenderit, nemo maxime laudantium explicabo commodi sed totam placeat recusandae doloribus, obcaecati et error eligendi iure ut!
+                    </p>
+                </div>
+
+                <!-- code examples -->
+                 <div class="code-styles">
+                    <div class="code-inline-example">
+                        <p>This is an example for Inline-Code: <code>let a = 1 + 2</code></p>
+                    </div>
+
+                    <div class="code-block-example">
+                        <div
+                            class="code-block"
+                            data-code-block-options="{&quot;codeBlock&quot;:&quot;function outerFunction() {\n  let outerVariable = \&quot;I am outside!\&quot;;\n\n  function innerFunction() {\n    console.log(outerVariable);\n  }\n\n  return innerFunction;\n}\n\nconst closureFunction = outerFunction();\nclosureFunction(); // Output: \&quot;I am outside!&quot;,&quot;codeLanguage&quot;:&quot;javascript&quot;}"
+                        >
+                            <code class="code-block__code" lang="javascript"></code>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Return To Top -->
+    <div class="return-to-top d-inline-block" data-return-top>
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./ts/main.ts"></script>
+</body>
+</html>
