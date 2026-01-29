@@ -1,0 +1,96 @@
+@each $tag, $sizes in $heading-styles {
+  $mapping: map.get($sizes, 'mb');
+
+  #{$tag},
+  .#{$tag} {
+    margin-bottom: spacing(4);
+    color: $color-text;
+    font-size: map.get($mapping, 'font-size');
+    line-height: map.get($mapping, 'line-height');
+    font-weight: map.get($mapping, 'font-weight');
+  }
+}
+
+@each $tag, $sizes in $paragraph-styles {
+  $mapping: map.get($sizes, 'mb');
+
+  .#{$tag} {
+    color: $color-text;
+    font-size: map.get($mapping, 'font-size');
+    line-height: map.get($mapping, 'line-height');
+    font-weight: map.get($mapping, 'font-weight');
+
+    p {
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+    }
+  }
+}
+
+p {
+  margin-bottom: spacing(4);
+  color: $color-text;
+  font-size: map.get(map.get(map.get($paragraph-styles, 'p1'), 'mb'), 'font-size');
+  line-height: map.get(map.get(map.get($paragraph-styles, 'p1'), 'mb'), 'line-height');
+  font-weight: map.get(map.get(map.get($paragraph-styles, 'p1'), 'mb'), 'font-weight');
+}
+
+.text-color-primary {
+  color: $color-text;
+}
+
+.text-color-secondary {
+  color: $color-primary;
+}
+
+.text-muted {
+  color: $color-gray-600 !important;
+}
+
+@include media-breakpoint-up(md) {
+  @each $tag, $sizes in $heading-styles {
+    $mapping: map.get($sizes, 'tb');
+
+    #{$tag},
+    .#{$tag} {
+      font-size: map.get($mapping, 'font-size');
+      line-height: map.get($mapping, 'line-height');
+      font-weight: map.get($mapping, 'font-weight');
+    }
+  }
+
+  .text-md-left {
+    text-align: left !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  @each $tag, $sizes in $heading-styles {
+    $mapping: map.get($sizes, 'dt');
+
+    #{$tag},
+    .#{$tag} {
+      font-size: map.get($mapping, 'font-size');
+      line-height: map.get($mapping, 'line-height');
+      font-weight: map.get($mapping, 'font-weight');
+    }
+  }
+
+  @each $tag, $sizes in $paragraph-styles {
+    $mapping: map.get($sizes, 'dt');
+
+    .#{$tag} {
+      font-size: map.get($mapping, 'font-size');
+      line-height: map.get($mapping, 'line-height');
+      font-weight: map.get($mapping, 'font-weight');
+    }
+  }
+
+  p {
+    font-size: map.get(map.get(map.get($paragraph-styles, 'p1'), 'dt'), 'font-size');
+    line-height: map.get(map.get(map.get($paragraph-styles, 'p1'), 'dt'), 'line-height');
+    font-weight: map.get(map.get(map.get($paragraph-styles, 'p1'), 'dt'), 'font-weight');
+  }
+}

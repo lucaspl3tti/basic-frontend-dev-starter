@@ -1,18 +1,18 @@
 {
-  "name": "basic-frontend-setup",
-  "description": "A basic test and development environment for my frontend projects based on vite",
+  "name": "basic-frontend-dev-starter",
+  "description": "My personal frontend development and testing environment using Vite, designed for framework-agnostic TypeScript projects.",
   "private": true,
-  "version": "2024.0",
+  "version": "2026.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint:scss": "npx stylelint src/scss/**/*.scss",
-    "lintfix:scss": "npx stylelint src/scss/**/*.scss --fix",
-    "lint:js": "eslint --ext .ts src/ts/**/*.ts",
-    "lintfix:js": "eslint --ext .ts src/ts/**/*.ts --fix",
-    "lint": "npm run lint:js && npm run lint:scss",
-    "lintfix": "npm run lintfix:js && npm run lintfix:scss"
+    "lint:ts": "npx eslint -c eslint.config.mjs",
+    "lint:ts:fix": "npm run lint:ts -- --fix",
+    "lint:scss": "npx stylelint ./app/scss",
+    "lint:scss:fix": "npm run lint:scss -- --fix",
+    "lint": "npm run lint:ts && npm run lint:scss",
+    "lint:fix": "npm run lint:ts:fix && npm run lint:scss:fix"
   },
   "keywords": [
     "javascript",
@@ -23,29 +23,28 @@
     "vite"
   ],
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.7",
-    "@babel/preset-typescript": "^7.8.3",
-    "@types/bootstrap": "^4.3.1",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "eslint": "^8.19.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "sass": "^1.53.0",
-    "stylelint": "^16.5.0",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-order": "^6.0.4",
-    "typescript": "^5.1.6",
-    "unplugin-auto-import": "^0.17.6",
-    "vite": "^2.9.9"
+    "@eslint/js": "^9.39.2",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^25.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "globals": "^17.2.0",
+    "sass": "^1.97.3",
+    "stylelint": "^17.0.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-order": "^7.0.1",
+    "typescript": "^5.9.3",
+    "vite": "6.3.6"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.11.3",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "deepmerge": "^4.3.1",
-    "highlight.js": "^11.9.0",
-    "material-symbols": "^0.17.2",
+    "highlight.js": "^11.11.1",
+    "material-symbols": "^0.40.2",
     "path": "^0.12.7"
   }
 }

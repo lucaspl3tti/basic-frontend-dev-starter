@@ -1,0 +1,59 @@
+// ### Icons
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+
+// ### Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  3xl: 1600px,
+  fhd: 1920px,
+  qhd: 2560px,
+  uhd: 3840px,
+);
+
+// ### Colors
+$gray-100: $color-gray-050;
+$gray-200: $color-gray-100;
+$gray-300: $color-gray-150;
+$gray-400: $color-gray-200;
+$gray-500: $color-gray-500;
+$gray-600: $color-gray-800;
+$gray-700: $color-gray-850;
+$gray-800: $color-gray-900;
+$gray-900: $color-gray-950;
+
+$primary: $color-primary;
+$secondary: $color-secondary;
+$success: $color-success;
+$info: $color-info;
+$warning: $color-warning;
+$danger: $color-danger;
+$light: $gray-100;
+$dark: $gray-900;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+// ### Fonts
+$body-font: $font-body;
+$primary-font: $body-font;
+$secondary-font: $font-body;
+
+$h1-font-size: map.get(map.get(map.get($heading-styles, 'h1'), 'mb'), 'font-size');
+$h2-font-size: map.get(map.get(map.get($heading-styles, 'h2'), 'mb'), 'font-size');
+$h3-font-size: map.get(map.get(map.get($heading-styles, 'h3'), 'mb'), 'font-size');
+$h4-font-size: map.get(map.get(map.get($heading-styles, 'h4'), 'mb'), 'font-size');
+$h5-font-size: map.get(map.get(map.get($heading-styles, 'h5'), 'mb'), 'font-size');
+$h6-font-size: map.get(map.get(map.get($heading-styles, 'h6'), 'mb'), 'font-size');
