@@ -1,8 +1,8 @@
-import ArrayAccess from '@helpers/helper/array-access.helper';
-import Dom from '@helpers/helper/dom.helper';
-import DeviceAccess from '@helpers/helper/device-access.helper';
-import Formatting from '@helpers/helper/formatting.helper';
-import Utilities from '@helpers/helper/utilities.helper';
+import { ArrayAccess } from '@lucaspl3tti/ts-helpers';
+import { Dom } from '@lucaspl3tti/ts-helpers';
+import { DeviceAccess } from '@lucaspl3tti/ts-helpers';
+import { Formatting } from '@lucaspl3tti/ts-helpers';
+import { Utilities } from '@lucaspl3tti/ts-helpers';
 import Plugin from '@ts/plugin-system/plugin.class.ts';
 
 /**

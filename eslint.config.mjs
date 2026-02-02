@@ -9,7 +9,6 @@ export default [
       '**/node_modules/**/*',
       '**/dist/**/*',
       '**/vendor/**/*',
-      './app/ts/helpers/**/*',
     ],
   },
 
@@ -23,7 +22,6 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        // project: './tsconfig.json',
       },
     },
     plugins: {

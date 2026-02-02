@@ -1,5 +1,5 @@
-import Dom from '@helpers/helper/dom.helper';
-import Utilities from '@helpers/helper/utilities.helper';
+import { Dom } from '@lucaspl3tti/ts-helpers';
+import { Utilities } from '@lucaspl3tti/ts-helpers';
 import Plugin from '@ts/plugin-system/plugin.class.ts';
 
 /**

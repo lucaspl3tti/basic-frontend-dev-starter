@@ -1,5 +1,5 @@
 import { PluginInterface, PluginOptions } from '@ts/interfaces/plugin.interface.ts';
-import Formatting from '@helpers/helper/formatting.helper.ts';
+import { Formatting } from '@lucaspl3tti/ts-helpers';
 import deepmerge from 'deepmerge';
 
 /**

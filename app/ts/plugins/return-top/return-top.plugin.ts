@@ -1,4 +1,4 @@
-import Dom from '@helpers/helper/dom.helper';
+import { Dom } from '@lucaspl3tti/ts-helpers';
 import Plugin from '@ts/plugin-system/plugin.class.ts';
 
 /**
